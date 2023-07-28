@@ -1,0 +1,4 @@
+Program: employee management system.
+This system has a dashboard describing the user’s (employee) profile
+A user can add new users to his/her profile where all the personal details are stored in .txt file until chosen to clear the data. 
+Source code allows you to add or delete the records. 

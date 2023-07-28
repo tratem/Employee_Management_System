@@ -1,0 +1,6 @@
+1. creating class that will have commuting info(owner of car[yes/no], distance to work)
+2. deriving class that will have the tax number[9], bruto salary, added salary for food and travel expenses. 
+3. deriving class from the previous one that will have the employeeID, name, surename, position. 
+4. creating get and set methods plus default constructors for both classes.
+5. create .txt file to contain the data
+6. in main chose if you want to read the data[R], add new data[A] or delete data[D]. 
