@@ -6,7 +6,7 @@ using namespace std;
 
 class Commuting
 {
-private:
+protected:
     bool car_owner;
     float distance_to_work;
 public:

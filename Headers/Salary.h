@@ -4,7 +4,7 @@
 
 class Salary : public Commuting
 {
-private:
+protected:
     int tax_number;
     int base_salary;
     float compensation_per_km;
