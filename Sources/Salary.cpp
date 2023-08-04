@@ -1,5 +1,6 @@
 #include "../Headers/Salary.h"
 
+
 template <typename T>
 Salary<T>::Salary()
 {
@@ -21,6 +22,12 @@ void Salary<T>::set_tax_nuber(int tn)
 }
 
 template <typename T>
+void Salary<T>::set_base_salary(int base)
+{
+    base_salary = base;
+}
+
+template <typename T>
 void Salary<T>::set_compensation_per_km(float cpkm)
 {
     compensation_per_km = cpkm;
@@ -33,18 +40,13 @@ void Salary<T>::set_food_expenses(T fe)
 }
 
 template <typename T>
-inline void Salary<T>::set_brutto(T b)
-{
-    brutto = b;
-}
-
-template <typename T>
-void Salary<T>::get_salary()
+void Salary<T>::get_Brutto()
 {
     Commuting<T> commuting;
     if(commuting.get_car_owner())
     {
-        return brutto + food_expenses + commuting.get_distance() * compensation_per_km;
+        return base_salary + food_expenses + commuting.get_distance() * compensation_per_km;
     }
-     
+    else 
+        return base_salary + food_expenses + 35;
 }
