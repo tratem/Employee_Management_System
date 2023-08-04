@@ -14,7 +14,8 @@ private:
     string position;
 public:
     Employee();
-    Employee(float em);
+    Employee(string n, string sn, int ID, string pos,
+    int tax, int base, float food, float cpkm, bool car, float distance);
     ~Employee();
     void set_employeeID(int ID);
     void set_name(string n);
