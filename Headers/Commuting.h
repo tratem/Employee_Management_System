@@ -4,19 +4,18 @@
 
 using namespace std;
 
-template <typename T>
 class Commuting
 {
 private:
     bool car_owner;
-    T distance_to_work;
+    float distance_to_work;
 public:
     Commuting();
     ~Commuting();
     void set_car_owner(bool co);
-    void set_distance_to_work(T dtw);
+    void set_distance_to_work(float dtw);
     bool get_car_owner();
-    T get_distance();
+    float get_distance();
 };
 
 
