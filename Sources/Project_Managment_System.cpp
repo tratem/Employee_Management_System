@@ -1,21 +1,17 @@
+//read IDEA.txt
 #include <iostream>
 #include <fstream>
-#include "../Headers/Salary.h"
 #include "../Headers/Employee.h"
 using namespace std;
-template <typename T>
-Salary<T> salary;
-
-
-Employee employee;
+Employee employee[100];
 
 int main()
 {
-    fstream DataFile ("../Data.txt",	ios::in | ios::out);
+    fstream DataFile ("../Data.txt", ios::out); //output the data
     char c, option;
-    int i = 0;
+    int i = 0; // counter for adding objects 
     cout << "Welcome to Employee Managment System!" << endl;
-    do
+    do //loop for closure of project
     {
         cout << "Please chose what would you like to do: [R]ead, [W]rite or [D]elete data." << endl;
         cin >> option;
@@ -38,7 +34,6 @@ int main()
             float compensation_per_km;
             float food_expenses;
 
-            
             cout << "Add Employees in the following format:" << endl
             << "First Name, Last Name, EmployeeID, Position" << endl;
             cin >> name >> surname >> employeeID >> position;
@@ -51,9 +46,13 @@ int main()
             << "Car owner[y/n], if yes write distance to work" <<endl;
             cin >>  car_owner;
             if (toupper(car_owner) == 'Y' )
+            {
                 cin >> distance_to_work;
-            
-            
+                employee[i](name, surname, employeeID, position, tax_number, 
+                base_salary, food_expenses, compensation_per_km, true, distance_to_work);
+            }
+            employee[i](name, surname, employeeID, position, tax_number, 
+            base_salary, food_expenses, compensation_per_km, false, 0.0);      
 
             i++;
         }
