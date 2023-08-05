@@ -47,7 +47,7 @@ float Salary::get_Brutto()
     Commuting commuting;
     if(commuting.get_car_owner())
     {
-        return base_salary + food_expenses + commuting.get_distance() * compensation_per_km;
+        return base_salary + food_expenses + commuting.get_distance() * 2 * compensation_per_km;
     }
     else 
         return base_salary + food_expenses + 35;
