@@ -42,8 +42,6 @@ void Salary::display_btutto_salary_data()
     <<"Total Brutto Salary: " << get_Brutto() << endl;
 }
 
-}
-
 float Salary::get_Brutto()
 {
     Commuting commuting;
