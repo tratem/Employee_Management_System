@@ -1,5 +1,6 @@
 #include "../Headers/Employee.h"
 
+//default constructor
 Employee::Employee()
 {
     employeeID = 0;
@@ -8,6 +9,7 @@ Employee::Employee()
     position = " ";    
 }
 
+//Parametarized constructor
 Employee::Employee(string n, string sn, int ID, string pos, int tax,
     int base, float food, float cpkm, bool car, float distance) 
 {
@@ -45,4 +47,14 @@ void Employee::set_surname(string s)
 void Employee::set_position(string p)
 {
     position = p;
+}
+void Employee::display_all_employee_data()
+{
+    cout << "Employee ID: " << employeeID << endl << "Name: " << name << endl
+    <<"Surname: " << surname << endl << "Position: " << position << endl 
+    <<"Tax Number: " << tax_number << endl << "Base Salary: " << base_salary << endl
+    <<"Food Expenses: " << food_expenses << endl 
+    <<"Compensation per km: " << compensation_per_km << endl 
+    <<"Car Owner: " << car_owner << endl << "Distance to Work: " << distance_to_work << endl 
+    <<"Total Brutto Salary: " << get_Brutto() << endl;
 }

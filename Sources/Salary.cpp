@@ -1,6 +1,5 @@
 #include "../Headers/Salary.h"
 
-
 Salary::Salary()
 {
     tax_number = 0;
@@ -32,6 +31,17 @@ void Salary::set_compensation_per_km(float cpkm)
 void Salary::set_food_expenses(float fe)
 {
     food_expenses = fe;
+}
+
+void Salary::display_btutto_salary_data() 
+{
+    cout << "Tax Number: " << tax_number << endl << "Base Salary: " << base_salary << endl
+    <<"Food Expenses: " << food_expenses << endl 
+    <<"Compensation per km: " << compensation_per_km << endl 
+    <<"Car Owner: " << car_owner << endl << "Distance to Work: " << distance_to_work << endl 
+    <<"Total Brutto Salary: " << get_Brutto() << endl;
+}
+
 }
 
 float Salary::get_Brutto()

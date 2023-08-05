@@ -16,6 +16,7 @@ public:
     void set_base_salary(int base);
     void set_compensation_per_km(float cpkm);
     void set_food_expenses(float fe);
+    void display_btutto_salary_data();
     float get_Brutto();
 };
 
