@@ -69,7 +69,7 @@ int main()
             
             if (toupper(print) == 'F')
             {
-                for (int j = 0; j <= i ; j++)
+                for (int j = 0; j < i ; j++)
                 {
                     employee[j].display_all_employee_data();
                 }
@@ -85,7 +85,14 @@ int main()
 
         else if (toupper(option) =='D')
         {
-            
+            int remove;
+            cout <<"Insert EmployeeID for the employee you want to remove: ";
+            cin >> remove;
+            for (int j = 0; j < i ; j++)
+                {
+                    if (employee[j].get_employeeID() == remove)
+                    employee[j] = Employee();
+                } 
         }
 
         cout << "For ending the program write x otherwhise write whatever.";
