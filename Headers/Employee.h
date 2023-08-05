@@ -21,6 +21,7 @@ public:
     void set_name(string n);
     void set_surname(string s);
     void set_position(string p);
+    int get_employeeID();
     void display_all_employee_data();
 };
 

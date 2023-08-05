@@ -48,6 +48,12 @@ void Employee::set_position(string p)
 {
     position = p;
 }
+
+int Employee::get_employeeID()
+{
+    return employeeID;
+}
+
 void Employee::display_all_employee_data()
 {
     cout << "Employee ID: " << employeeID << endl << "Name: " << name << endl
